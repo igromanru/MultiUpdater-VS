@@ -18,6 +18,38 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MultiUpdater\source\basic.h" />
+    <ClInclude Include="MultiUpdater\source\config.h" />
+    <ClInclude Include="MultiUpdater\source\download.h" />
+    <ClInclude Include="MultiUpdater\source\draw.h" />
+    <ClInclude Include="MultiUpdater\source\file.h" />
+    <ClInclude Include="MultiUpdater\source\minizip\crypt.h" />
+    <ClInclude Include="MultiUpdater\source\minizip\ioapi.h" />
+    <ClInclude Include="MultiUpdater\source\minizip\unzip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MultiUpdater\source\config.c" />
+    <ClCompile Include="MultiUpdater\source\download.c" />
+    <ClCompile Include="MultiUpdater\source\draw.c" />
+    <ClCompile Include="MultiUpdater\source\file.c" />
+    <ClCompile Include="MultiUpdater\source\main.c" />
+    <ClCompile Include="MultiUpdater\source\minizip\ioapi.c" />
+    <ClCompile Include="MultiUpdater\source\minizip\unzip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="MultiUpdater\resources\audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MultiUpdater\resources\banner.png" />
+    <Image Include="MultiUpdater\resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MultiUpdater\config.json" />
+    <None Include="MultiUpdater\Makefile" />
+    <None Include="MultiUpdater\Makefile.config" />
+    <None Include="MultiUpdater\resources\rominfo.rsf" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C55D0101-17F2-40B1-BB70-1C31D724A0D3}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>

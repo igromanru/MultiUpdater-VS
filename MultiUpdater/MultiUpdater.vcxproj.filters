@@ -13,5 +13,78 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\minizip">
+      <UniqueIdentifier>{af995329-f096-45b1-8cc3-35e1851be741}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MultiUpdater\source\basic.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\config.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\download.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\draw.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\file.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\minizip\crypt.h">
+      <Filter>Quelldateien\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\minizip\ioapi.h">
+      <Filter>Quelldateien\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiUpdater\source\minizip\unzip.h">
+      <Filter>Quelldateien\minizip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MultiUpdater\source\config.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\download.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\draw.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\file.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\main.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\minizip\ioapi.c">
+      <Filter>Quelldateien\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiUpdater\source\minizip\unzip.c">
+      <Filter>Quelldateien\minizip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="MultiUpdater\resources\audio.wav">
+      <Filter>Ressourcendateien</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MultiUpdater\resources\banner.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="MultiUpdater\resources\icon.png">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MultiUpdater\resources\rominfo.rsf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="MultiUpdater\Makefile" />
+    <None Include="MultiUpdater\Makefile.config" />
+    <None Include="MultiUpdater\config.json" />
   </ItemGroup>
 </Project>
