@@ -83,8 +83,9 @@
     <None Include="MultiUpdater\resources\rominfo.rsf">
       <Filter>Ressourcendateien</Filter>
     </None>
-    <None Include="MultiUpdater\Makefile" />
-    <None Include="MultiUpdater\Makefile.config" />
     <None Include="MultiUpdater\config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MultiUpdater\Makefile" />
   </ItemGroup>
 </Project>

@@ -46,8 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MultiUpdater\config.json" />
-    <None Include="MultiUpdater\Makefile" />
-    <None Include="MultiUpdater\Makefile.config" />
+    <Text Include="MultiUpdater\Makefile">
+      <FileType>Document</FileType>
+    </Text>
     <None Include="MultiUpdater\resources\rominfo.rsf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
