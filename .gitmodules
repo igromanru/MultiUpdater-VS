@@ -1,0 +1,3 @@
+[submodule "MultiUpdater/MultiUpdater"]
+	path = MultiUpdater/MultiUpdater
+	url = git@github.com:igromanru/MultiUpdater.git
