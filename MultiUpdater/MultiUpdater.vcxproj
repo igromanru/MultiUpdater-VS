@@ -45,7 +45,9 @@
     <Image Include="MultiUpdater\resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MultiUpdater\config.json" />
+    <Text Include="MultiUpdater\config.json">
+      <FileType>Document</FileType>
+    </Text>
     <Text Include="MultiUpdater\Makefile">
       <FileType>Document</FileType>
     </Text>
@@ -95,24 +97,34 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>make -C $(ProjectDir)MultiUpdater</NMakeBuildCommandLine>
     <NMakeOutput>
     </NMakeOutput>
-    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make clean -C $(ProjectDir)MultiUpdater</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all -C $(ProjectDir)MultiUpdater</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
-    <IncludePath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(IncludePath)</IncludePath>
+    <NMakeIncludeSearchPath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(ProjectDir)portlibs\armv6k\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <IncludePath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(ProjectDir)portlibs\armv6k\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)portlibs\armv6k\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <ExecutablePath>$(SolutionDir)Dependency\;$(ExecutablePath)</ExecutablePath>
+    <NMakeAssemblySearchPath>
+    </NMakeAssemblySearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>make -C $(ProjectDir)MultiUpdater</NMakeBuildCommandLine>
     <NMakeOutput>
     </NMakeOutput>
-    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make clean -C $(ProjectDir)MultiUpdater</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all -C $(ProjectDir)MultiUpdater</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <NMakeIncludeSearchPath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
-    <IncludePath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(IncludePath)</IncludePath>
+    <NMakeIncludeSearchPath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(ProjectDir)portlibs\armv6k\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <IncludePath>C:\devkitPro\devkitARM\arm-none-eabi\include;C:\devkitPro\libctru\include;$(ProjectDir)portlibs\armv6k\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)portlibs\armv6k\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <ExecutablePath>$(SolutionDir)Dependency\;$(ExecutablePath)</ExecutablePath>
+    <NMakeAssemblySearchPath>
+    </NMakeAssemblySearchPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
